@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
-project(windisplaymode)
+
+if(POLICY CMP0048)
+    cmake_policy(SET CMP0048 NEW)
+endif()
+
+project(windisplaymode VERSION 0.1)
 
 add_executable(windisplaymode windisplaymode.cpp)
 
