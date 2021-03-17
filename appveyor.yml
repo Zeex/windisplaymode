@@ -12,3 +12,6 @@ build_script:
   - cmake --build . --config %CONFIGURATION%
 after_build:
   - cpack . --config %CONFIGURATION%
+
+artifacts:
+  - path: windisplaymode-*.zip
