@@ -1,17 +1,19 @@
 version: '{build}'
 
 platform:
-  - x86
-  - x64
+    - x86
+    - x64
 configuration:
-  - Release
+    - Release
 
 before_build:
-  - cmake .
+    - if %PLATFORM% == x86 set BUILD_ARCH=Win32
+    - if %PLATFORM% == x64 set BUILD_ARCH=x64
+    - cmake . -A %BUILD_ARCH%
 build_script:
-  - cmake --build . --config %CONFIGURATION%
+    - cmake --build . --config %CONFIGURATION%
 after_build:
-  - cpack . --config %CONFIGURATION%
+    - cpack . --config %CONFIGURATION%
 
 artifacts:
-  - path: windisplaymode-*.zip
+    - path: windisplaymode-*.zip
