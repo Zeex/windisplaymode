@@ -1,6 +1,8 @@
 windisplaymode
 ==============
 
+[![Build status][build_badge_image]][build_page]
+
 It's just a command-line utility that can change resolution and refresh rate of your monitor.
 
 Usage:
@@ -22,3 +24,6 @@ windisplaymode set 0 1920x1080@60
 windisplaymode set 0 @144
         Change refresh rate to 144 Hz keeping the same resolution and color depth
 ```
+
+[build_badge_image]: https://ci.appveyor.com/api/projects/status/j8vn5t9c67bu58xu/branch/master?svg=true
+[build_page]: https://ci.appveyor.com/project/Zeex/windisplaymode/branch/master
