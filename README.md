@@ -9,12 +9,14 @@ Usage:
 
 ```
 windisplaymode list <display>
-        Print a list of available display modes for the specified display
+        Print a list of available modes for the specified display
 windisplaymode set <display> <mode>
         Change display mode
+```
 
 Examples:
 
+```
 windisplaymode set 0 1920x1080
         Change resolution of display 0 (first display) to 1920 (width) by 1080 (height) pixels
 windisplaymode set 0 1920x1080x32

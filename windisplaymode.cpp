@@ -58,7 +58,7 @@ namespace
     {
         std::cerr << "Usage:\n\n"
             << programName << " list <display>\n"
-            << "\tPrint a list of available display modes for the specified display\n"
+            << "\tPrint a list of available modes for the specified display\n"
             << programName << " set <display> <mode>\n"
             << "\tChange display mode\n\n"
             << "Examples:\n\n"
@@ -209,7 +209,7 @@ namespace
             displayDevice.DeviceName,
             &mode,
             nullptr,
-            0,
+            CDS_UPDATEREGISTRY,
             nullptr);
         if (changeResult != DISP_CHANGE_SUCCESSFUL) {
             std::cerr
