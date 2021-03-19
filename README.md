@@ -1,4 +1,4 @@
-windisplaymode
+WinDisplayMode
 ==============
 
 [![Build status][build_badge_image]][build_page]
